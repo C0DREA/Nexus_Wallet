@@ -1,6 +1,8 @@
 import ExpenseForm from './components/expenses/ExpenseForm';
 import ExpenseList from './components/expenses/ExpenseList';
 import CurrencySelector from './components/ui/CurrencySelector';
+import AnalyzeButton from './components/analysis/AnalyzeButton';
+import AnalysisPanel from './components/analysis/AnalysisPanel';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <CurrencySelector />
       <ExpenseForm />
       <ExpenseList />
+      <AnalyzeButton />
+      <AnalysisPanel />
     </div>
   );
 }

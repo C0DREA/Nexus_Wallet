@@ -15,7 +15,7 @@ function ExpenseList() {
       {expenses.length === 0 && <p>No expenses yet</p>}
 
       {expenses.map((exp) =>  {
-        const converted = (exp.amount * rate).toFixed(2);
+        const converted = rate ? (exp.amount * rate).toFixed(2) : '...';
 
         return (
           <div key={exp.id}>
