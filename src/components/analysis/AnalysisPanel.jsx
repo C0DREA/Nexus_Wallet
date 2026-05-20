@@ -35,15 +35,18 @@ function AnalysisPanel() {
               >
                 Reject
               </button>
-              <input 
-                type='text'
-                placeholder='Add comment'
-                value={s.comment || ''}
-                onChange={(e) => 
-                    dispatch(updateSuggestionComment({ id: s.id, comment: e.target.value }))
-                }
-              />
             </>
+          )}
+
+          {s.status !== 'pending' && (
+            <input
+              type="text"
+              placeholder="Add comment"
+              value={s.comment || ''}
+              onChange={(e) =>
+                dispatch(updateSuggestionComment({ id: s.id, comment: e.target.value }))
+              }
+            />
           )}
         </div>
       ))}
