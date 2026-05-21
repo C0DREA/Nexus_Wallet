@@ -32,7 +32,7 @@ function AnalyzeButton() {
     });
 
     // Rule 1 — High total spending
-    if (total > 500) {
+    if (total > 100) {
       suggestions.push({
         id: 'total',
         text: `Total spending is high: ${total} RON`,
@@ -45,9 +45,9 @@ function AnalyzeButton() {
     for (const category in categoryTotals) {
       const percent = ((categoryTotals[category] / total) * 100).toFixed(0);
 
-      if (percent > 40) {
+      if (percent > 20) {
         suggestions.push({
-          id: category,
+          id: `category-${category}`,
           text: `${category} represents ${percent}% of your spending`,
           status: 'pending',
           comment: '',
@@ -58,7 +58,7 @@ function AnalyzeButton() {
     // Rule 3 — Small repeated expenses (basic “leak” idea)
     const smallExpenses = expenses.filter((exp) => exp.amount < 20);
 
-    if (smallExpenses.length >= 5) {
+    if (smallExpenses.length >= 2) {
       suggestions.push({
         id: 'leaks',
         text: 'Many small expenses detected — possible money leaks',

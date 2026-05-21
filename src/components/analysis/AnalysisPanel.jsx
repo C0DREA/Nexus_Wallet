@@ -10,6 +10,10 @@ function AnalysisPanel() {
     <div>
       <h2>Nexus AI</h2>
 
+      <p style={{ fontSize: '12px', color: 'gray' }}>
+        Analysis is based on the current expenses. Adding new expenses will reset the previous insights.
+      </p>
+
       {suggestions.length === 0 && <p>No analysis yet</p>}
 
       {suggestions.map((s) => (
@@ -17,6 +21,12 @@ function AnalysisPanel() {
           <p>
             {s.text} [{s.status}]
           </p>
+
+          {s.comment && (
+            <p style={{ fontStyle: 'italic' }}>
+              Comment: {s.comment}
+            </p>
+          )}
 
           {s.status === 'pending' && (
             <>

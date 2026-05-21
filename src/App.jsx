@@ -3,6 +3,7 @@ import ExpenseList from './components/expenses/ExpenseList';
 import CurrencySelector from './components/ui/CurrencySelector';
 import AnalyzeButton from './components/analysis/AnalyzeButton';
 import AnalysisPanel from './components/analysis/AnalysisPanel';
+import InsightsPanel from './components/analysis/InsightsPanel';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ExpenseList />
       <AnalyzeButton />
       <AnalysisPanel />
+      <InsightsPanel />
     </div>
   );
 }
