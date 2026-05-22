@@ -33,8 +33,9 @@ function App() {
         <div style={{ 
           marginBottom: '20px',
           background: 'white',
-          padding: '15px',
-          borderRadius: '8px' 
+          padding: '20px',
+          borderRadius: '8px',
+          boxShadow: '0 2px 5px rgba(0,0,0,0.05)'  
         }}>
           <ExpenseForm />
         </div>
@@ -42,8 +43,9 @@ function App() {
         <div style={{ 
           marginBottom: '20px',
           background: 'white',
-          padding: '15px',
-          borderRadius: '8px' 
+          padding: '20px',
+          borderRadius: '8px',
+          boxShadow: '0 2px 5px rgba(0,0,0,0.05)'  
         }}>
           <ExpenseList />
         </div>
@@ -56,8 +58,9 @@ function App() {
         <div style={{ 
           marginBottom: '20px',
           background: 'white',
-          padding: '15px',
-          borderRadius: '8px' 
+          padding: '20px',
+          borderRadius: '8px',
+          boxShadow: '0 2px 5px rgba(0,0,0,0.05)'  
         }}>
           <AnalyzeButton />
         </div>
@@ -65,8 +68,9 @@ function App() {
         <div style={{ 
           marginBottom: '20px',
           background: 'white',
-          padding: '15px',
-          borderRadius: '8px' 
+          padding: '20px',
+          borderRadius: '8px',
+          boxShadow: '0 2px 5px rgba(0,0,0,0.05)'  
         }}>
           <AnalysisPanel />
         </div>
@@ -74,8 +78,9 @@ function App() {
         <div style={{ 
           marginBottom: '20px',
           background: 'white',
-          padding: '15px',
-          borderRadius: '8px' 
+          padding: '20px',
+          borderRadius: '8px',
+          boxShadow: '0 2px 5px rgba(0,0,0,0.05)'  
         }}>
           <InsightsPanel />
         </div>

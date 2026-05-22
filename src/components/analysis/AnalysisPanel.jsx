@@ -8,7 +8,7 @@ function AnalysisPanel() {
 
   return (
     <div>
-      <h2>Nexus AI</h2>
+      <h2 style={{ marginBottom: '15px' }}>Nexus AI</h2>
 
       <p style={{ fontSize: '12px', color: 'gray' }}>
         Analysis is based on the current expenses. Adding new expenses will reset the previous insights.
@@ -53,6 +53,7 @@ function AnalysisPanel() {
               type="text"
               placeholder="Add comment"
               value={s.comment || ''}
+              style={{ marginTop: '5px', width: '100%' }}
               onChange={(e) =>
                 dispatch(updateSuggestionComment({ id: s.id, comment: e.target.value }))
               }

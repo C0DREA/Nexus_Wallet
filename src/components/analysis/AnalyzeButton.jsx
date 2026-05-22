@@ -80,7 +80,11 @@ function AnalyzeButton() {
     dispatch(setSuggestions(suggestions));
   };
 
-  return <button onClick={handleAnalyze}>Analyze</button>;
+  return (
+    <button style={{ width: '100%', padding: '10px' }} onClick={handleAnalyze}>
+      Run Nexus AI Analysis
+    </button>   
+  );
 }
 
 export default AnalyzeButton;

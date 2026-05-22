@@ -6,7 +6,7 @@ function InsightsPanel() {
   if (expenses.length === 0) {
     return (
       <div>
-        <h2>Nexus Insights</h2>
+        <h2 style={{ marginBottom: '15px' }}>Nexus Insights</h2>
         <p>No data available</p>
       </div>
     );
@@ -25,7 +25,7 @@ function InsightsPanel() {
 
   return (
     <div>
-      <h2>Nexus Insights</h2>
+      <h2 style={{ marginBottom: '15px' }}>Nexus Insights</h2>
 
       <p>Total spending: {total} RON</p>
 
