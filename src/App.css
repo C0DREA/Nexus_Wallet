@@ -27,3 +27,31 @@ input, select {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+.app-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+    }
+}
+
+/* Smartphone View */
+@media (max-width: 480px) {
+    .app-container {
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+/* Small Screen View */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+}

@@ -8,10 +8,10 @@ import './App.css';
 
 function App() {
   return (
-    <div style={{ display: 'flex', gap: '20px', padding: '20px' }}>
+    <div className='app-container'>
 
       {/* Left Side */}
-      <div style={{ flex: 1 }}>
+      <div style={{ flex: 1, minWidth: '300px' }}>
 
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           
@@ -53,7 +53,7 @@ function App() {
       </div>
 
       {/* Right Side */}
-      <div style={{ flex: 1 }}>
+      <div style={{ flex: 1, minWidth: '300px' }}>
 
         <div style={{ 
           marginBottom: '20px',
