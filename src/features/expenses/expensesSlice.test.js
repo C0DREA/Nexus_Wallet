@@ -1,7 +1,7 @@
 import { test, expect } from 'vitest';
-import expensesReducer, { addExpense } from './expensesSlice';
+import expensesReducer, { addExpense, deleteExpense } from './expensesSlice';
 
-test('should add an expense', () => {
+test('should add an expense with correct data', () => {
   const initialState = { expenses: [] };
 
   const newExpense = {
@@ -17,4 +17,22 @@ test('should add an expense', () => {
   );
 
   expect(newState.expenses.length).toBe(1);
+  expect(newState.expenses[0].title).toBe('Coffee');
+  expect(newState.expenses[0].amount).toBe(10);
+  expect(newState.expenses[0].category).toBe('Food');
+});
+
+test('should delete an expense by id', () => {
+  const initialState = {
+    expenses: [
+      { id: 1, title: 'Coffee', amount: 10, category: 'Food' },
+    ],
+  };
+
+  const newState = expensesReducer(
+    initialState,
+    deleteExpense(1)
+  );
+
+  expect(newState.expenses.length).toBe(0);
 });

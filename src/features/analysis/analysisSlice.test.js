@@ -13,6 +13,8 @@ describe('analysisSlice', () => {
     const state = analysisReducer(initialState, setSuggestions(suggestions));
 
     expect(state.suggestions.length).toBe(1);
+    expect(state.suggestions[0].text).toBe('Test suggestion');
+    expect(state.suggestions[0].status).toBe('pending');
   });
 
   test('should update suggestion status', () => {
