@@ -21,7 +21,7 @@ function App() {
             <img 
               src={Logo}
               alt="Nexus Wallet Logo"
-              style={{ width: '70px', height: '70px' }} 
+              style={{ width: '100px', height: '70px' }} 
             />
             <h1>Nexus Wallet</h1>
           </div>
