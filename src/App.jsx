@@ -18,7 +18,7 @@ function App() {
           {/* Left : Logo & title */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <img 
-              src="Nexus Wallet\resources\images\Logo2.png" 
+              src="/Nexus Wallet/resources/images/Logo-5.png"
               alt="Nexus Wallet Logo"
               style={{ width: '50px', height: '50px' }} 
             />
