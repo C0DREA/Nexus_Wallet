@@ -46,7 +46,7 @@ function InsightsPanel() {
             {category}: {amount} RON
             <span style={{ fontSize: '12px', color: 'gray', marginLeft: '5px' }}>
               (~{rate ? (amount * rate).toFixed(2) : '...'} {selectedCurrency})
-            </span>  
+            </span>
             ({percent}%)
           </p>
         );
