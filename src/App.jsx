@@ -5,6 +5,7 @@ import AnalyzeButton from './components/analysis/AnalyzeButton';
 import AnalysisPanel from './components/analysis/AnalysisPanel';
 import InsightsPanel from './components/analysis/InsightsPanel';
 import './App.css';
+import Logo from '../resources/images/Logo2.png';
 
 function App() {
   return (
@@ -16,11 +17,11 @@ function App() {
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           
           {/* Left : Logo & title */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', justifyContent: 'center' }}>
             <img 
-              src="/Nexus Wallet/resources/images/Logo-5.png"
+              src={Logo}
               alt="Nexus Wallet Logo"
-              style={{ width: '50px', height: '50px' }} 
+              style={{ width: '70px', height: '70px' }} 
             />
             <h1>Nexus Wallet</h1>
           </div>
