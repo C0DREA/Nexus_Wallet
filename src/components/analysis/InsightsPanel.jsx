@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 
 function InsightsPanel() {
   const expenses = useSelector((state) => state.expenses.expenses);
+  const { rate, selectedCurrency } = useSelector((state) => state.currency);
 
   if (expenses.length === 0) {
     return (
@@ -13,6 +14,7 @@ function InsightsPanel() {
   }
 
   const total = expenses.reduce((sum, exp) => sum + exp.amount, 0);
+  const convertedTotal = rate ? (total * rate).toFixed(2) : '...';
 
   const categoryTotals = {};
 
@@ -27,7 +29,12 @@ function InsightsPanel() {
     <div>
       <h2 style={{ marginBottom: '15px' }}>Nexus Insights</h2>
 
-      <p>Total spending: {total} RON</p>
+      <p>
+        Total spending: {total} RON
+        <span style={{ fontSize: '12px', color: 'gray', marginLeft: '5px' }}>
+          (~{convertedTotal} {selectedCurrency})
+        </span>
+      </p>
 
       <h3>By Category:</h3>
 
@@ -36,7 +43,11 @@ function InsightsPanel() {
 
         return (
           <p key={category}>
-            {category}: {amount} RON ({percent}%)
+            {category}: {amount} RON
+            <span style={{ fontSize: '12px', color: 'gray', marginLeft: '5px' }}>
+              (~{rate ? (amount * rate).toFixed(2) : '...'} {selectedCurrency})
+            </span>
+            ({percent}%)
           </p>
         );
       })}
