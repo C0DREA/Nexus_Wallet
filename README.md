@@ -1,6 +1,8 @@
 # Nexus Wallet
 
-Nexus Wallet is a personal finance application built with React and Redux that helps users track expenses, analyze spending behavior, and receive AI-like insights with a human-in-the-loop review system.
+Nexus Wallet is a personal finance application built with React and Redux that combines expense tracking with an AI-inspired analysis system and a human-in-the-loop validation workflow.
+
+It allows users not only to monitor their spending, but also to review, validate, and comment on automated financial insights, simulating real-world AI-assisted decision systems.
 
 ---
 
@@ -11,9 +13,9 @@ A hybrid AI + human decision system inspired by real-world "human-in-the-loop" w
 - Expense tracking:
   - Add, edit, and delete expenses
 - Custom categories support
-  - Add your own categories, additionally to the pre-existing ones
+  - Add custom categories alongside predefined ones
 - Currency conversion
-  - RON → selected currency (USD, EUR, RUB)
+  - Real-time conversion from RON to selected currencies (USD, EUR, RUB)
 - AI-powered spending analysis (Nexus AI)
   - Detect high spending
   - Identify dominant categories
@@ -58,10 +60,12 @@ When clicking "Run Nexus AI Analysis":
   - High total spending
   - Dominant categories
   - Potential money leaks (small frequent expenses)
-- Shows the percentage from total expense for each analysis
+- Calculates the percentage contribution of each category to total spending
 
 ### Human-in-the-Loop Review
-Each AI suggestion can be accepted/ rejected and commented on by the user. This AI output validation by the user simulates the human-in-the-loop system.
+Each AI suggestion can be accepted/ rejected and commented on by the user. This AI output validation by the user simulates the human-in-the-loop system. 
+
+This introduces a feedback layer where users actively validate AI outputs, rather than passively consuming them.
 
 This simulates real-world AI-assisted decision systems, which reflects my own work experience.
 
@@ -76,7 +80,7 @@ Provides a summary for:
 
 - Analysis is stateless: running analysis recalculates insights based on current data.
 - Comments are tied to specific suggestions using stable IDs.
-- Clear separation between (simple, but efficient, for better UX):
+- Clear separation between (simple and efficient, improving user experience):
   - Data input (left panel)
   - AI + insights (right panel)
 
@@ -148,16 +152,16 @@ Provides a summary for:
 ### Smartphone View
 ![Smartphone View](./Wireframe/Smartphone%20view.png)
 
-### Main UI, Analysis and insights panel in action:
+### ### Application in Action:
 
 ![Main UI Working](./Wireframe/Main%20UI%20working.png)
 
 ---
 
 ## Tests
-- Unit tests for reducers and utility functions
-- Analysis logic tested
-- UI rendering & interaction tested
+- Unit tests for Redux reducers (expenses and analysis logic)
+- Validation of AI suggestion generation and updates
+- UI rendering and user interaction tests using Testing Library
 
 ---
 
@@ -187,5 +191,5 @@ npm run dev
 
 ## Author
 
-Built by **C0DREA**, as my final learning project.
+Built by **C0DREA** as a final project in the Front-End Engineer career learning path.
 GitHub: https://github.com/C0DREA
