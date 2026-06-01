@@ -98,8 +98,41 @@ Provides a summary for:
 ## Project Structure
 
 ```
-
-
+├── Wireframe
+├── Resources
+    ├── images
+├── src
+    ├── app
+          ├── store.js
+    ├── components
+          ├── analysis
+              ├── AnalysisPanel.jsx
+              ├── AnalyzeButton.jsx
+              ├── InsightsPanel.jsx
+          ├── expenses
+              ├── ExpenseForm.jsx
+              ├── ExpenseForm.test.jsx
+              ├── ExpenseList.jsx
+          ├── ui
+              ├── CurrencySelector.jsx
+    ├── features
+          ├── analysis
+              ├── analysisSlice.js
+              ├── analysisSlice.test.js
+          ├── categories
+              ├── categoriesSlice.js
+          ├── currency
+              ├── currencySlice.js
+          ├── expenses
+              ├── expensesSlice.js
+              ├── expensesSlice.test.js
+    ├── test
+          ├── setup.js
+    |
+    ├── App.css
+    ├── App.js
+    ├── index.js
+    ├── main.jsx
 ```
 
 ---
