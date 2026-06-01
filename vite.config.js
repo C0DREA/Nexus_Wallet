@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Nexus Wallet',
+  base: '/Nexus_Wallet/',
   test: {
     environment: 'jsdom',
     globals: true,
