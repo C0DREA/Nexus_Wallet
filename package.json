@@ -2,7 +2,7 @@
   "name": "nexus-wallet",
   "private": true,
   "version": "0.0.0",
-  "homepage":"https://c0drea.github.io/Nexus-Wallet",
+  "homepage":"https://c0drea.github.io/Nexus_Wallet",
   "type": "module",
   "scripts": {
     "dev": "vite",

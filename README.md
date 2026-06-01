@@ -129,7 +129,7 @@ Provides a summary for:
 ---
 
 ## Live Demo
-A live demo of the application is available at: [Nexus Wallet](https://c0drea.github.io/Nexus-Wallet)
+A live demo of the application is available at: [Nexus Wallet](https://c0drea.github.io/Nexus_Wallet)
 
 ---
 
